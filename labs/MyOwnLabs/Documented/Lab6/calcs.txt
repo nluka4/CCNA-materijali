@@ -1,0 +1,54 @@
+en
+conf t
+hostname 
+
+vlan 10
+name USERS
+vlan 20
+name STAFF
+vlan 30
+name DEV
+vlan 40
+name SUPPORT
+vlan 99 
+name MANAGEMENT
+
+
+172.16.40.0 
+
+10101100.00010000.00101000.00000000
+
+USERS
+submask: 25
+network: 172.16.40.0
+broadcast: 172.16.40.127
+1st usable: 172.16.40.1
+last usable: 172.16.40.6
+
+STAFF
+submask: 26
+network: 172.16.40.128
+broadcast: 172.16.40.191
+1st usable: 172.16.40.129
+last usable: 172.16.40.190
+
+DEV
+submask: 27
+network: 172.16.40.192
+broadcast: 172.16.40.223
+1st usable: 172.16.40.193
+last usable: 172.16.40.222
+
+SUPPORT
+submask: 28
+network: 172.16.40.224
+broadcast: 172.16.40.239
+1st usable: 172.16.40.225
+last usable: 172.16.40.238
+
+MANAGEMENT
+submask: 29
+network: 172.16.40.240
+broadcast: 172.16.40.247
+1st usable: 172.16.40.241
+last usable: 172.16.40.246
